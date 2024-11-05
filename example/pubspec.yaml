@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  assets_icon:
+  asset_icon:
     path: ../
 
 

@@ -1,7 +1,6 @@
-import 'package:assets_icon/assets_icon.dart';
 
+import 'package:asset_icon/asset_icon.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 import 'generated/icons.g.dart';
 
@@ -41,12 +40,12 @@ class MyHomePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           AssetIcon(
-            iconName: MyIcons.star,
+            iconName: AssetIcons.star,
             color: Colors.green,
             opacity: 0.7,
           ),
           AssetIcon(
-            iconName: MyIcons.cart,
+            iconName: AssetIcons.cart,
           ),
         ],
       ),

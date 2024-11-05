@@ -1,6 +1,6 @@
 # 🚀 AssetIcon
 
-`AssetIcon` is a powerful and customizable Flutter package for rendering asset-based icons with ease. Whether you're working with PNG or SVG formats, this package allows you to adjust properties such as size, color, and opacity. It also offers batch generation of Dart code for your asset keys, making it easier to manage large sets of icons.
+`AssetIcon` is a powerful and customizable Flutter package for rendering asset-based icons with ease. Whether you're working with PNG, SVG,and other formats, this package allows you to adjust properties such as size, color, and opacity. It also offers batch generation of Dart code for your asset keys, making it easier to manage large sets of icons.
 
 ## ✨ Features
 

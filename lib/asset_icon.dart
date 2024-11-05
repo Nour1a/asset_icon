@@ -1,88 +1,9 @@
-// library assets_icon;
-
-// import 'package:flutter/material.dart';
-// import 'package:flutter_svg/svg.dart';
-
-// class AssetIcon extends StatelessWidget {
-//   final String iconName;
-//   final double? size;
-//   final double? opacity;
-//   final Color? color;
-//   static Color? _defaultColor;
-//   static String _defaultPath = "assets/icons/";
-//   final String? semanticLabel;
-//   late final IconThemeData iconTheme;
-//   AssetIcon(
-//       {super.key,
-//       required this.iconName,
-//       this.size,
-//       this.color,
-//       this.opacity,
-//       this.semanticLabel});
-
-//   static settings({Color? defaultColor, String? defaultPath}) {
-//     if (defaultColor != null) {
-//       _defaultColor = defaultColor;
-//     }
-//     if (defaultPath != null) {
-//       _defaultPath = defaultPath;
-//     }
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     iconTheme = IconTheme.of(context);
-//     final iconOpacity = opacity ?? iconTheme.opacity ?? 1.0;
-//     if (iconOpacity < 1.0) {
-//       return _buildWithOpacity(context, iconOpacity);
-//     } else {
-//       return _buildBase(context);
-//     }
-//   }
-
-//   Widget _buildBase(context) {
-//     final String iconPath = "$_defaultPath$iconName";
-//     final Color iconColor =
-//         color ?? _defaultColor ?? iconTheme.color ?? Colors.black;
-//     final double iconSize = size ?? iconTheme.size ?? 25;
-
-//     if (iconName.toLowerCase().endsWith(".svg")) {
-//       return SvgPicture.asset(iconPath,
-//           height: iconSize,
-//           width: iconSize,
-//           colorFilter: ColorFilter.mode(iconColor, BlendMode.srcIn),
-//           semanticsLabel: semanticLabel,);
-//     }
-
-//     return Semantics(
-//         label: semanticLabel,
-//         child: Image.asset(
-//           iconPath,
-//           width: iconSize,
-//           height: iconSize,
-//           color: iconColor,
-//           fit: BoxFit.scaleDown,
-//           excludeFromSemantics: true,
-//         ));
-//   }
-
-//   Widget _buildWithOpacity(context, iconOpacity) {
-//     return Opacity(
-//       opacity: iconOpacity,
-//       child: _buildBase(context),
-//     );
-//   }
-
-//   static get path => _defaultPath;
-// }
-
 /// A widget that displays an icon from the assets folder, with support for PNG and SVG formats.
 ///
 /// This widget allows customization of the icon's size, color, opacity, and semantic labels.
 /// It also supports global settings for default color and asset path.
-library assets_icon;
+library asset_icon;
 
-export 'src/assets_icon_settings.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
