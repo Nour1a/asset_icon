@@ -1,6 +1,6 @@
 name: asset_icon
-description: "a powerful and customizable Flutter package for rendering asset-based icons with ease"
-version: 1.0.0
+description: "A powerful and customizable Flutter package for rendering asset-based icons with ease"
+version: 1.0.1
 homepage: https://github.com/hesham04Dev/asset_icon
 
 environment:

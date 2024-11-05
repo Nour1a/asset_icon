@@ -10,7 +10,7 @@ import 'package:flutter_svg/svg.dart';
 /// A [StatelessWidget] that displays an asset image or SVG icon.
 class AssetIcon extends StatelessWidget {
   /// The default color for the icons when not specified in the constructor.
-  static var _defaultColor;
+  static Color? _defaultColor;
 
   /// The default path where icons are located. The default value is `assets/icons/`.
   static String _defaultPath = "assets/icons/";
@@ -38,9 +38,9 @@ class AssetIcon extends StatelessWidget {
   /// Creates an [AssetIcon] widget.
   ///
   /// [iconName] is required and should include the file extension (e.g., `icon.png` or `icon.svg`).
-  AssetIcon({
+  AssetIcon(
+    this.iconName, {
     super.key,
-    required this.iconName,
     this.size,
     this.color,
     this.opacity,

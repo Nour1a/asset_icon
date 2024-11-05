@@ -25,14 +25,14 @@ Basic Usage
 import 'package:assets_icon/assets_icon.dart';
 
 AssetIcon(
-  iconName: 'example_icon.png',     // Icon name (stored in assets/icons/)
+  'example_icon.png',  // Icon name (stored in assets/icons/)
   semanticLabel: 'Example icon',    // Semantic label for accessibility
 )
 ```
 With Customization
 ```dart
 AssetIcon(
-  iconName: 'example_icon.svg',     // Icon name (must be in the asset folder)
+  'example_icon.svg',     // Icon name (must be in the asset folder)
   size: 30.0,                       // Custom size
   color: Colors.blue,               // Custom color
   opacity: 0.7,                     // Custom opacity
@@ -77,7 +77,7 @@ Then you can write like this:
 import 'path_to_lib_folder/generated/icons.g.dart';
 ...
 AssetIcon(
-  iconName: AssetIcons.example,
+  AssetIcons.example,
   semanticLabel: 'Example icon',
 )
 ```

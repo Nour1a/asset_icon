@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         iconTheme: const IconThemeData(
           color: Colors.red,
           size: 150,
-          opacity: 0.4,
+          opacity: 0.9,
         ),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
@@ -34,19 +34,10 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          AssetIcon(
-            iconName: AssetIcons.star,
-            color: Colors.green,
-            opacity: 0.7,
-          ),
-          AssetIcon(
-            iconName: AssetIcons.cart,
-          ),
-        ],
+      body: Center(
+        child: AssetIcon(
+          AssetIcons.star,
+        ),
       ),
     );
   }
