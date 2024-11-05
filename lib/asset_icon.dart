@@ -4,7 +4,6 @@
 /// It also supports global settings for default color and asset path.
 library asset_icon;
 
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -60,6 +59,7 @@ class AssetIcon extends StatelessWidget {
       _defaultPath = defaultPath;
     }
   }
+
   static get path => _defaultPath;
 
   @override
