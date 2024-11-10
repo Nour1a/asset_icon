@@ -1,4 +1,5 @@
-# 🚀 AssetIcon
+
+# <img src="![./screenshots/logo.png](https://raw.githubusercontent.com/hesham04Dev/asset_icon/refs/heads/main/screenshots/logo.png)" width="30px"/> AssetIcon
 
 `AssetIcon` is a powerful and customizable Flutter package for rendering asset-based icons with ease. Whether you're working with PNG, SVG,and other formats, this package allows you to adjust properties such as size, color, and opacity. It also offers batch generation of Dart code for your asset keys, making it easier to manage large sets of icons.
 
@@ -18,6 +19,12 @@ Add `AssetIcon` to your `pubspec.yaml`:
 dependencies:
   assets_icon: ^latest_version
 ```
+
+## 🤔 How does the Icon should be?
+The Icon should be one color with transparency
+![description](https://raw.githubusercontent.com/hesham04Dev/asset_icon/refs/heads/main/screenshots/how_should_the_icon_be.png)
+
+
 
 ## 🚀 Getting Started
 Basic Usage
@@ -39,6 +46,20 @@ AssetIcon(
   semanticLabel: 'Example icon',    // Semantic label for accessibility
 )
 ```
+
+## 🔄 Comparison with `ImageIcon`
+
+| Feature                         | AssetIcon              | ImageIcon                |
+|---------------------------------|------------------------|--------------------------|
+| **Support Svg**                 | Yes                    | No                       |
+| **Opacity**                     | Yes                    | No                       |
+| **Color Customization**         | Yes                    | Yes                      |
+| **Constant Key Generation**     | Yes                    | No                       |
+| **Online Icon Support**         | No                     | Yes                      |
+
+
+**Summary**: `AssetIcon` offers more flexibility with SVG support, opacity adjustments, and constant key generation, making it ideal for managing large icon libraries. `ImageIcon` may be sufficient for simple use cases with only PNGs.
+
 
 ## ⚙️ Configuration
 To set default values for the color and asset path globally, use the `settings` method:
