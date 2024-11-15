@@ -1,3 +1,6 @@
+## 1.0.4
+* fix hot reload bug * 
+
 ## 1.0.3+1
 * add screenshots* 
 

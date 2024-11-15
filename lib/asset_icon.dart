@@ -32,9 +32,6 @@ class AssetIcon extends StatelessWidget {
   /// A semantic label for the icon, used by screen readers to provide context to visually impaired users.
   final String? semanticLabel;
 
-  /// Stores the current [IconThemeData] for customization within the widget.
-  late final IconThemeData iconTheme;
-
   /// Creates an [AssetIcon] widget.
   ///
   /// [iconName] is required and should include the file extension (e.g., `icon.png` or `icon.svg`).
@@ -65,19 +62,19 @@ class AssetIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Retrieve the current icon theme from the context
-    iconTheme = IconTheme.of(context);
+    final iconTheme = IconTheme.of(context);
     final iconOpacity = opacity ?? iconTheme.opacity ?? 1.0;
 
     // Build the icon widget with or without opacity, depending on the value
     if (iconOpacity < 1.0) {
-      return _buildWithOpacity(context, iconOpacity);
+      return _buildWithOpacity(context, iconOpacity, iconTheme);
     } else {
-      return _buildBase(context);
+      return _buildBase(context, iconTheme);
     }
   }
 
   /// Builds the icon widget without applying additional opacity.
-  Widget _buildBase(BuildContext context) {
+  Widget _buildBase(BuildContext context, iconTheme) {
     final String iconPath = "$_defaultPath$iconName";
     final Color iconColor =
         color ?? _defaultColor ?? iconTheme.color ?? Colors.black;
@@ -109,10 +106,10 @@ class AssetIcon extends StatelessWidget {
   }
 
   /// Builds the icon widget with an opacity wrapper.
-  Widget _buildWithOpacity(BuildContext context, double iconOpacity) {
+  Widget _buildWithOpacity(BuildContext context, double iconOpacity, iconTheme) {
     return Opacity(
       opacity: iconOpacity,
-      child: _buildBase(context),
+      child: _buildBase(context, iconTheme),
     );
   }
 }
