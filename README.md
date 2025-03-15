@@ -36,6 +36,16 @@ AssetIcon(
   semanticLabel: 'Example icon',    // Semantic label for accessibility
 )
 ```
+With Label
+```dart
+import 'package:assets_icon/assets_icon.dart';
+
+AssetIcon.withLabel(
+  'example_icon.png',  
+  label: 'Example icon',
+  position: AssetIconLabelPosition.top
+)
+```
 With Customization
 ```dart
 AssetIcon(

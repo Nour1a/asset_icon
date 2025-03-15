@@ -1,3 +1,6 @@
+## 1.0.5
+* Add label to the icon with `AssetIcon.withLabel()` * 
+
 ## 1.0.4
 * fix hot reload bug * 
 

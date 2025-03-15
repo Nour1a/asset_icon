@@ -1,0 +1,3 @@
+- [x] show label and with styling
+- [x] add places for the label
+- [x] test the new update
